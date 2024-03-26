@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>mod_MultiStickySocialSliders</name>
+	<author>Sequere</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>Copyright (C) sequere.com</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>info@sequere.com</authorEmail>
+	<authorUrl>www.sequere.com</authorUrl>
+	<version>2.5</version>
+	<description>MultiSticky Social Sliders</description>
+	<files>
+		<filename module="mod_MultiStickySocialSliders">mod_MultiStickySocialSliders.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+		<folder>javascript</folder>
+		<folder>style</folder>
+ 	</files>
+
+	 <languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">language/en-GB/en-GB.mod_MultiStickySocialSliders.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_MultiStickySocialSliders.sys.ini</language>
+    </languages>
+<config>
+	<fields name="params">
+	<fieldset name="basic">
+
+
+<field type="spacer" label="&lt;div style=&quot;color:#fff; font-size:12px; width:464px; text-align:center; font-weight:bold;font-family:calibri; padding:5px; margin:0; background:#333333;&quot;&gt;GENERAL SETTINGS&lt;/div&gt;" />
+<field name="theme_style" type="list" default="12" label="CHOOSE STYLE" description="Choose Style">
+<option value="7">Vertical without Logo</option>
+<option value="8">Vertical with Logo</option>
+<option value="9">Square Box</option>
+<option value="12">Round Shape</option>
+</field>
+
+<field name="top_margin" type="text" default="10" label="TOP MARGIN" description="Enter Top Margin" />
+
+<field name="spacer1" type="spacer" hr="true" />
+
+<field type="spacer" label="&lt;div style=&quot;color:#fff; font-size:12px; width:464px; text-align:center; font-weight:bold;font-family:calibri; padding:5px; margin:0; background:#52D3FE;&quot;&gt;TWITTER SLIDER SETTINGS&lt;/div&gt;" />
+
+	<field name="ms3_twitt_s_enable" type="list" default="1" label="ENABLE" description="Enable or Disable">
+<option value="1">Yes</option>
+<option value="2">No</option>
+</field>
+
+<field name="ms3_twitt_direction" type="list" default="2" label="DIRECTION" description="Slider Direction">
+<option value="1">Left</option>
+<option value="2">Right</option>
+</field>
+
+<field name="ms3_twitt_top_margin" type="text" default="85" label="BUTTON TOP MARGIN" description="Enter Twitter Slider Top Margin" /> 
+
+<field name="ms3_twitt_username" type="text" default="PulseExtensions" label="USERNAME" description="Enter Twitter User Name" /> 
+<field name="ms3_twitt_slide_width" type="text" default="300" label="SLIDER WIDTH" description="Slider Width" /> 
+<field name="ms3_twitt_slide_height" type="text" default="440" label="SLIDER HEIGHT" description="Slider Height" /> 
+
+<field name="ms3_twitt_twitts_number" type="text" default="6" label="NUMBER OF TWEETS" description="Number Of Tweets Display in Slider" />
+<field name="ms3_twitt_border_size" type="text" default="5" label="BORDER SIZE" description="Enter Border Size" />
+<field name="ms3_twitt_border_color" type="text" default="#33ccff" label="BORDER COLOR" description="Enter Border Color" />
+
+<field name="spacer2" type="spacer" hr="true" />
+
+<field type="spacer" label="&lt;div style=&quot;color:#EC4645; font-size:12px; width:464px; text-align:center; font-weight:bold;font-family:calibri; padding:5px; margin:0; background:#9E9E9E;&quot;&gt;YOUTUBE SLIDER SETTINGS&lt;/div&gt;" />
+
+	<field name="ms3_ytube_s_enable" type="list" default="1" label="ENABLE" description="Enable or Disable">
+<option value="1">Yes</option>
+<option value="2">No</option>
+</field>
+
+<field name="ms3_ytube_direction" type="list" default="2" label="DIRECTION" description="Slider Direction">
+<option value="1">Left</option>
+<option value="2">Right</option>
+</field>
+
+<field name="ms3_ytube_top_margin" type="text" default="235" label="BUTTON TOP MARGIN" description="Enter Youtube Slider Top Margin" /> 
+
+<field name="ms3_ytube_id" type="text" default="LadyGagaVEVO" label="PAGE ID" description="Enter Youtube" /> 
+<field name="ms3_ytube_slide_width" type="text" default="300" label="SLIDER WIDTH" description="Slider Width" /> 
+<field name="ms3_ytube_slide_height" type="text" default="440" label="SLIDER HEIGHT" description="Slider Height" /> 
+
+<field name="ms3_ytube_border_size" type="text" default="5" label="BORDER SIZE" description="Enter Border Size" />
+<field name="ms3_ytube_border_color" type="text" default="#9b9b9b" label="BORDER COLOR" description="Enter Border Color" />
+
+<field name="spacer3" type="spacer" hr="true" />
+
+<field type="spacer" label="&lt;div style=&quot;color:#fff; font-size:12px; width:464px; text-align:center; font-weight:bold;font-family:calibri; padding:5px; margin:0; background:#3C5A99;&quot;&gt;FACEBOOK SLIDER SETTINGS&lt;/div&gt;" />
+
+<field name="ms3_fb_s_enable" type="list" default="1" label="ENABLE" description="Enable or Disable">
+<option value="1">Yes</option>
+<option value="2">No</option>
+</field>
+
+<field name="ms3_fb_direction" type="list" default="2" label="DIRECTION" description="Slider Direction">
+<option value="1">Left</option>
+<option value="2">Right</option>
+</field>
+
+<field name="ms3_fb_top_margin" type="text" default="10" label="BUTTON TOP MARGIN" description="Enter Facebook Slider Top Margin" /> 
+
+<field name="ms3_fb_page_url" type="text" default="http://www.facebook.com/pulseextensions" label="PAGE URL" description="Enter Facebook Page Url" /> 
+<field name="ms3_fb_slide_width" type="text" default="300" label="SLIDER WIDTH" description="Slider Width" /> 
+<field name="ms3_fb_slide_height" type="text" default="440" label="SLIDER HEIGHT" description="Slider Height" /> 
+
+<field name="ms3_fb_faces" type="list" default="1" label="SHOW FACES" description="Want to Show Faces">
+<option value="1">Yes</option>
+<option value="2">No</option>
+</field>
+
+<field name="ms3_fb_header" type="list" default="1" label="SHOW HEADER" description="Want to Show Header">
+<option value="1">Yes</option>
+<option value="0">No</option>
+</field>
+
+<field name="ms3_fb_stream" type="list" default="0" label="SHOW STREAM" description="Want to Show Stream">
+<option value="1">Yes</option>
+<option value="0">No</option>
+</field>
+
+<field name="ms3_fb_border_size" type="text" default="5" label="BORDER SIZE" description="Enter Border Size" />
+<field name="ms3_fb_border_color" type="text" default="#3b5998" label="BORDER COLOR" description="Enter Border Color" />
+
+
+<field name="spacer4" type="spacer" hr="true" />
+
+
+<field type="spacer" label="&lt;div style=&quot;color:#fff; font-size:12px; width:464px; text-align:center; font-weight:bold;font-family:calibri; padding:5px; margin:0; background:#C13E2F;&quot;&gt;GOOGLE PLUS SLIDER SETTINGS&lt;/div&gt;" />
+
+	<field name="ms3_gplus_s_enable" type="list" default="1" label="ENABLE" description="Enable or Disable">
+<option value="1">Yes</option>
+<option value="2">No</option>
+</field>
+
+<field name="ms3_gplus_direction" type="list" default="2" label="DIRECTION" description="Slider Direction">
+<option value="1">Left</option>
+<option value="2">Right</option>
+</field>
+
+<field name="ms3_gplus_top_margin" type="text" default="160" label="BUTTON TOP MARGIN" description="Enter Google Plus Slider Top Margin" /> 
+
+<field name="ms3_gplus_id" type="text" default="104629412415657030658" label="PAGE ID" description="Enter Google Plus Page Id" /> 
+<field name="ms3_gplus_slide_width" type="text" default="300" label="SLIDER WIDTH" description="Slider Width" /> 
+<field name="ms3_gplus_slide_height" type="text" default="440" label="SLIDER HEIGHT" description="Slider Height" /> 
+
+<field name="ms3_gplus_border_size" type="text" default="5" label="BORDER SIZE" description="Enter Border Size" />
+<field name="ms3_gplus_border_color" type="text" default="#000000" label="BORDER COLOR" description="Enter Border Color" />
+
+
+<field name="spacer5" type="spacer" hr="true" />
+
+<field type="spacer" label="&lt;div style=&quot;color:#fff; font-size:12px; width:464px; text-align:center; font-weight:bold;font-family:calibri; padding:5px; margin:0; background:#2298C7;&quot;&gt;LINKEDIN SLIDER SETTINGS&lt;/div&gt;" />
+
+	<field name="ms3_linkedin_s_enable" type="list" default="1" label="ENABLE" description="Enable or Disable">
+<option value="1">Yes</option>
+<option value="0">No</option>
+</field>
+
+<field name="ms3_linkedin_direction" type="list" default="2" label="DIRECTION" description="Slider Direction">
+<option value="1">Left</option>
+<option value="2">Right</option>
+</field>
+
+<field name="ms3_linkedin_top_margin" type="text" default="310" label="BUTTON TOP MARGIN" description="Enter Linked In Top Margin" /> 
+
+<field name="ms3_linkdn_public_profile" type="text" default="http://in.linkedin.com/in/pulseinfotech" label="PROFILE URL" description="Enter Linked in Public Profile URL" /> 
+<field name="ms3_linkdn_public_profile_enable" type="list" default="1" label="PUBLIC PROFILE" description="Public Profile Display">
+<option value="1">Yes</option>
+<option value="2">No</option>
+</field>
+
+<field name="ms3_linkedin_company_profile" type="text" default="http://www.linkedin.com/company/1441" label="COMPANY URL" description="Enter Linked in Company URL" /> 
+<field name="ms3_linkedin_company_profile_enable" type="list" default="1" label="COMPANY PROFILE" description="Company Profile Display">
+<option value="1">Yes</option>
+<option value="2">No</option>
+</field>
+
+<field name="ms3_linkedin_slide_width" type="text" default="300" label="SLIDER WIDTH" description="Slider Width" /> 
+<field name="ms3_linkedin_slide_height" type="text" default="440" label="SLIDER HEIGHT" description="Slider Height" /> 
+
+<field name="ms3_linkedin_border_size" type="text" default="5" label="BORDER SIZE" description="Enter Border Size" />
+<field name="ms3_linkedin_border_color" type="text" default="#007fb1" label="BORDER COLOR" description="Enter Border Color" />
+
+		
+		
+</fieldset>
+</fields>
+	
+</config>
+</extension>

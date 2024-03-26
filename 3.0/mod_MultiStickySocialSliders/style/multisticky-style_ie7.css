@@ -1,0 +1,25 @@
+.ms3_fbookCenterOuter {
+	position: fixed;
+	display: block;
+	top: 50%;
+	height: auto;
+	overflow: visible;
+}
+/*
+.ms3_fbkCenterInner {
+	margin-top: expression( -this.clientHeight / 2 +"px");
+}
+*/
+/* fixed top */
+
+.ms3_fbookCenterOuter.ms_3fubkbFixed {
+	position: fixed;
+	display: block;
+	top: 0;
+	height: auto;
+	overflow: visible;
+}
+
+.ms_3fubkbFixed .ms3_fbkCenterInner {
+	margin-top: 0;
+}
